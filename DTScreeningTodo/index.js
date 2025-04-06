@@ -36,7 +36,7 @@ function checkEmptyState() {
 
 /**
  * Toggles the application between light and dark mode
- * Updates UI elements and stores user preference
+ * Updates UI elements without storing preferences
  */
 function toggleDarkMode() {
   // Toggle dark mode class on body
@@ -45,9 +45,6 @@ function toggleDarkMode() {
   // Update button icon based on current mode
   const isDarkMode = body.classList.contains("dark-mode");
   darkModeToggle.innerHTML = isDarkMode ? "☀️" : "🌙";
-
-  // Save user preference to localStorage
-  localStorage.setItem("darkMode", isDarkMode);
 }
 
 /**
@@ -203,12 +200,6 @@ function getDragAfterElement(container, y) {
  * Initialize the application when the DOM content is loaded
  */
 window.addEventListener("DOMContentLoaded", () => {
-  // Check and apply saved dark mode preference
-  if (localStorage.getItem("darkMode") === "true") {
-    body.classList.add("dark-mode");
-    darkModeToggle.innerHTML = "☀️";
-  }
-
-  // Initialize empty state check
+  // Initialize empty state check only
   checkEmptyState();
 });
