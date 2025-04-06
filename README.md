@@ -43,7 +43,7 @@ If you want to go beyond the requirements, try adding:
    ```
 2. Navigate to the folder:
    ```bash
-   cd DT-Screening---Todo-List
+   cd DTScreeningTodo/DT-Screening---Todo-List
    ```
 3. Open `index.html` in your browser.
 
@@ -54,7 +54,7 @@ No build steps or installations required.
 ## 📁 Project Structure
 
 ```
-DT-Screening---Todo-List/
+DT-Screening---Todo-List/DTScreeningTodo/
 ├── index.html      # Main HTML structure
 ├── style.css       # All styling
 └── index.js        # Task logic (add, remove, complete)
