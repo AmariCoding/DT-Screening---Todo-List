@@ -17,16 +17,6 @@ A simple, minimal, and responsive TODO List web application built using **pure H
 
 ---
 
-## 💪 Go Beyond (Optional Enhancements)
-
-If you want to go beyond the requirements, try adding:
-
-- 🚀 **Animations** when adding/removing tasks
-- 🎨 **A dark mode toggle** for light/dark theme switching
-- 📌 **Drag-and-drop support** to rearrange tasks
-
----
-
 ## 🛠️ Technologies Used
 
 - HTML5
