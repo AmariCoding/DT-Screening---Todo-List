@@ -10,16 +10,20 @@ A simple, minimal, and responsive TODO List web application built using **pure H
 - Remove tasks
 - Mark tasks as completed with a line-through effect
 - Shows a message when the task list is empty
-- **Dark Mode** toggle to switch between light and dark themes
-- **Animations** when adding/removing tasks
-- **Drag-and-Drop** support to reorder tasks
 - Responsive layout for mobile and desktop
+- Drag and Drop task
+- Dark mode feature
+- Animations
 
 ---
 
-## 🖼️ Screenshot
+## 💪 Go Beyond (Optional Enhancements)
 
-![Todo App Screenshot](screenshot.png) <!-- Optional: Replace with actual screenshot -->
+If you want to go beyond the requirements, try adding:
+
+- 🚀 **Animations** when adding/removing tasks
+- 🎨 **A dark mode toggle** for light/dark theme switching
+- 📌 **Drag-and-drop support** to rearrange tasks
 
 ---
 
@@ -36,14 +40,21 @@ A simple, minimal, and responsive TODO List web application built using **pure H
 1. Clone this repository:
    ```bash
    git clone https://github.com/AmariCoding/DT-Screening---Todo-List.git
+   ```
+2. Navigate to the folder:
+   ```bash
+   cd DT-Screening---Todo-List
+   ```
+3. Open `index.html` in your browser.
 
+No build steps or installations required.
 
 ---
 
 ## 📁 Project Structure
 
 ```
-todo-pure-js/
+DT-Screening---Todo-List/
 ├── index.html      # Main HTML structure
 ├── style.css       # All styling
 └── index.js        # Task logic (add, remove, complete)
@@ -61,7 +72,7 @@ This project was built and completed in **under 2 hours** as part of the **DT Sc
 
 **Jerome Guya**  
 Made with 💻 and ☕ in 2025  
-[GitHub](https://github.com/your-username) <!-- Update with your GitHub if desired -->
+[GitHub](https://github.com/AmariCoding) <!-- Update with your GitHub if desired -->
 
 ---
 
