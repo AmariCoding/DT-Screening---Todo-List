@@ -17,6 +17,9 @@ A simple, minimal, and responsive TODO List web application built using **pure H
 
 ---
 
+## 🧠 How I Tackled the Task
+- I began by planning the core features and layout, then structured the HTML, styled it with responsive CSS, and implemented the interactive logic using clean, modular JavaScript — all while keeping the codebase lightweight and framework-free.
+
 ## 🛠️ Technologies Used
 
 - HTML5
