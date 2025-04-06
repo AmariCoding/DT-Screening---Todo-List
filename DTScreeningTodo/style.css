@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative; /* Added to allow absolute positioning of child elements */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Todo container */
+.todo-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Form */
+.form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .form-group {
+    flex-direction: row;
+  }
+}
+
+.input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input:focus {
+  border-color: black;
+}
+
+.add-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: background 0.2s;
+}
+
+.add-btn:hover {
+  background-color: #333;
+}
+
+/* Todo List */
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e2e2e2;
+  animation: fadeIn 0.3s ease-in-out;
+  transition: opacity 0.3s, transform 0.3s;
+  transform-origin: top center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.todo-item.removing {
+  animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+}
+
+.todo-item span {
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.todo-item span.completed {
+  text-decoration: line-through;
+  color: gray;
+  transition: all 0.3s;
+}
+
+.remove-btn {
+  background: red;
+  color: white;
+  border: none;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 4px;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.remove-btn:hover {
+  background-color: #c53030;
+  transform: scale(1.05);
+}
+
+/* Empty State */
+.empty {
+  text-align: center;
+  padding: 50px 0;
+  color: #888;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.875rem;
+}
+
+/* Utility */
+.hidden {
+  display: none;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .todo-container {
+  background-color: #1e1e1e;
+  border-color: #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.dark-mode .title {
+  color: #ffffff;
+}
+
+.dark-mode .input {
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border-color: #444;
+}
+
+.dark-mode .add-btn {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.dark-mode .add-btn:hover {
+  background-color: #555;
+}
+
+.dark-mode .todo-item {
+  background-color: #2d2d2d;
+  border-color: #444;
+}
+
+.dark-mode .remove-btn {
+  background-color: #444;
+  color: #ffffff;
+}
+
+.dark-mode .remove-btn:hover {
+  background-color: #c53030;
+}
+
+.dark-mode .empty {
+  color: #888;
+}
+
+.dark-mode .footer {
+  color: #888;
+}
+
+/* Mode toggle button */
+.mode-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+  margin-right: 0;
+}
+
+.mode-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .mode-toggle:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

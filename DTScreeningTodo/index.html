@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO | JeromeGuya</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <h1 class="title">TODO List</h1>
+      </header>
+
+      <!-- Main content -->
+      <div class="todo-container">
+        <form id="todo-form" class="form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Add a new task..."
+              class="input"
+              required
+            />
+            <button type="submit" class="add-btn">Add</button>
+          </div>
+        </form>
+
+        <div id="todo-list" class="todo-list"></div>
+
+        <!-- Empty State -->
+        <div id="empty-state" class="empty hidden">
+          <p>No tasks yet. Add one to get started!</p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <p>Made by Jerome Guya</p>
+        <p>DT Screening Project 2025</p>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
