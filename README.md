@@ -10,6 +10,9 @@ A simple, minimal, and responsive TODO List web application built using **pure H
 - Remove tasks
 - Mark tasks as completed with a line-through effect
 - Shows a message when the task list is empty
+- **Dark Mode** toggle to switch between light and dark themes
+- **Animations** when adding/removing tasks
+- **Drag-and-Drop** support to reorder tasks
 - Responsive layout for mobile and desktop
 
 ---
@@ -32,15 +35,8 @@ A simple, minimal, and responsive TODO List web application built using **pure H
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/todo-pure-js.git
-   ```
-2. Navigate to the folder:
-   ```bash
-   cd todo-pure-js
-   ```
-3. Open `index.html` in your browser.
+   git clone https://github.com/AmariCoding/DT-Screening---Todo-List.git
 
-No build steps or installations required.
 
 ---
 
