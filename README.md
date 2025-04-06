@@ -1,7 +1,6 @@
 # DT-Screening---Todo-List
 
-A simple, minimal, and responsive TODO List web application built using **pure HTML, CSS, and JavaScript**. No frameworks, no libraries – just clean code.
-
+A simple, minimal, and responsive TODO List web application built using **pure HTML, CSS, and JavaScript**.
 ---
 
 ## ✨ Features
@@ -11,12 +10,6 @@ A simple, minimal, and responsive TODO List web application built using **pure H
 - Mark tasks as completed with a line-through effect
 - Shows a message when the task list is empty
 - Responsive layout for mobile and desktop
-
----
-
-## 🖼️ Screenshot
-
-![Todo App Screenshot](screenshot.png) <!-- Optional: Replace with actual screenshot -->
 
 ---
 
