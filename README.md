@@ -25,4 +25,4 @@ A simple, minimal, and responsive TODO List web application built using **pure H
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/todo-pure-js.git
+   https://github.com/AmariCoding/DT-Screening---Todo-List.git
